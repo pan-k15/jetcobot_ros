@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Run demo node -->
+  <node name="jetcobot_moveit_demo_node"
+        pkg="jetcobot_control"
+        type="jetcobot_moveit_demo_node"
+        output="screen"/>
+
+</launch>

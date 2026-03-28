@@ -1,0 +1,14 @@
+<launch>
+  <include file="$(find jetcobot_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <group ns="jetcobot_motion_planning_node">
+    <rosparam command="load" file="$(find jetcobot_config)/config/ompl_planning.yaml"/>
+    <param name="planning_plugin" value="ompl_interface/OMPLPlanner"/>
+  </group>
+
+  <node name="jetcobot_motion_planning_node" pkg="jetcobot_control" type="motion_planning_api" output="screen">
+  </node>
+
+</launch>

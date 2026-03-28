@@ -1,0 +1,12 @@
+controller_list:
+  - name: arm_group_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - a1_Joint
+      - a2_Joint
+      - a3_Joint
+      - a4_Joint
+      - a5_Joint
+      - a6_Joint

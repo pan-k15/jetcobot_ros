@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find jetcobot_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <node name="jetcobot_kinematics_node" pkg="jetcobot_control" type="kinematics_test" output="screen">
+    <rosparam command="load" file="$(find jetcobot_config)/config/kinematics.yaml"/>
+  </node>
+</launch>

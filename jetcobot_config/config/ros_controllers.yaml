@@ -1,0 +1,40 @@
+arm_group_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - 1_Joint
+    - 2_Joint
+    - 3_Joint
+    - 4_Joint
+    - 5_Joint
+    - 6_Joint
+  gains:
+    1_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    2_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    3_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    4_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    5_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    6_Joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
